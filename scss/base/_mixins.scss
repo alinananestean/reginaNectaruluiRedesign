@@ -1,0 +1,7 @@
+@mixin lighter-text-color {
+  color: #f8d55d;
+  &:visited,
+  &:hover {
+    @include lighter-text-color;
+  }
+}

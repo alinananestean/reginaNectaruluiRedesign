@@ -1,0 +1,77 @@
+header {
+  @include lighter-text-color;
+  text-align: center;
+  height: 600px;
+
+  //BACKGROUND IMAGE
+  background: url('../img/bee.jpg') no-repeat center;
+  background-size: cover;
+  .layer {
+    background-color: rgba(10, 10, 10, 0.8);
+    width: 100%;
+    height: 600px;
+  }
+
+
+  //LOGO & TEXT
+  .logo-container {
+    padding: 35px 0 20px;
+    position: relative;
+    width: 210px;
+    margin: 0 auto;
+    a {
+      @include lighter-text-color;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: 'Marcellus', serif;
+      font-size: 2em;
+      margin: 0;
+      }
+    .logo_first_line {
+      text-indent: -76px;
+    }
+
+    img {
+      width: 60px;
+      position: absolute;
+      top: 25px;
+      right: 20px;
+    }
+  }
+
+
+  //NAVIGATION
+  nav {
+    padding-bottom: 90px;
+
+    ul {
+      margin: 0;
+      li {
+        list-style: none;
+        padding-bottom: 10px;
+
+        a {
+          @include lighter-text-color;
+          font-size: 1.1em;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  // TEXT LINES
+
+  p {
+    font-size: .8em;
+    font-weight: 300;
+    margin: 0;
+
+    a {
+      @include lighter-text-color;
+    }
+  }
+  ////:nth-child(4) {
+  ////  display: none;
+  //}
+}
