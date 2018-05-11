@@ -1,7 +1,14 @@
-* {
+//////////////
+// BOX SIZING
+html {
     box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
-body {
+//////////////
+// TYPOGRAPHY
+p, h2 {
     font-family: 'Montserrat', sans-serif;
 }

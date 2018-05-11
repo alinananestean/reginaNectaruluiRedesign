@@ -1,19 +1,21 @@
 header {
   @include lighter-text-color;
   text-align: center;
-  height: 600px;
+  height: 640px;
 
-  //BACKGROUND IMAGE
+  ///////////////////
+  // BACKGROUND IMAGE
   background: url('../img/bee.jpg') no-repeat center;
   background-size: cover;
   .layer {
     background-color: rgba(10, 10, 10, 0.8);
     width: 100%;
-    height: 600px;
+    height: 640px;
   }
 
 
-  //LOGO & TEXT
+  ///////////////
+  // LOGO & TEXT
   .logo-container {
     padding: 35px 0 20px;
     position: relative;
@@ -25,7 +27,7 @@ header {
     h1 {
       text-transform: uppercase;
       font-family: 'Marcellus', serif;
-      font-size: 2em;
+      font-size: 2em; //(32px)
       margin: 0;
       }
     .logo_first_line {
@@ -41,7 +43,8 @@ header {
   }
 
 
-  //NAVIGATION
+  //////////////
+  // NAVIGATION
   nav {
     padding-bottom: 90px;
 
@@ -53,25 +56,31 @@ header {
 
         a {
           @include lighter-text-color;
-          font-size: 1.1em;
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-size: 1.1em; //16px
           padding: 10px;
         }
       }
     }
   }
 
-  // TEXT LINES
+
+  ////////////////////
+  // INTRO TEXT LINES
 
   p {
-    font-size: .8em;
+    font-size: .938em; //(15px)
     font-weight: 300;
-    margin: 0;
+    margin: 0 0 3em;
 
     a {
       @include lighter-text-color;
     }
   }
-  ////:nth-child(4) {
-  ////  display: none;
-  //}
+  :nth-child(4) {
+    padding-right: 4em; //(60px)
+    padding-left: 4em;
+    margin: 0;
+  }
 }

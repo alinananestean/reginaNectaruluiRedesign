@@ -1,0 +1,57 @@
+///////////////////
+// ABOUT SECTION CARD
+.about {
+  position: relative;
+   h2 {
+    @include headings-style;
+
+    //IMAGE
+    &:before {
+      background: url("../img/api.jpg") no-repeat center;
+      background-size: cover;
+      display: block;
+      height: 350px;
+      margin-bottom: 60px;
+      content:"";
+    }
+  }
+  //PARAGRAPH
+  p {
+    text-align: center;
+    padding: 0 15px; //15px
+    margin-bottom: 5em; //80px
+  }
+  //NAME LABEL
+  .name-label {
+    color: #f8d55d;
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: 285px;
+    text-align: center;
+    background: rgba(10, 10, 10, 0.8);
+    h3 {
+      font-family: 'Marcellus', serif;
+      font-size: 1.4em;
+      margin-bottom: 0;
+    }
+    h4 {
+      font-size: 1em;
+      font-family: 'Marcellus', serif;
+      padding: 0;
+      margin: 0;
+    }
+
+  }
+}
+
+///////////////////
+// PRODUSE SECTION CARD
+
+#produse {
+  padding: 0 15px;
+
+  h2 {
+    @include headings-style;
+  }
+}

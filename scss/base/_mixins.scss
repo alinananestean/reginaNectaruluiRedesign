@@ -1,7 +1,19 @@
+/////////////////////////////////
+// HEADER TEXT & LINKS COLOR
 @mixin lighter-text-color {
   color: #f8d55d;
   &:visited,
   &:hover {
-    @include lighter-text-color;
+    color: #f8d55d;
   }
+}
+
+/////////////////////////////////
+// CARDS HEADINGS
+@mixin headings-style {
+  color: #1f1f1f;
+  font-weight: 500;
+  font-size: 1.875em; //(30px)
+  text-align: center;
+  margin-bottom: 1.166em; //(35px)
 }
