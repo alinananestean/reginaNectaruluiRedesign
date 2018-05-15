@@ -9,11 +9,18 @@
 }
 
 /////////////////////////////////
-// CARDS HEADINGS
-@mixin headings-style {
+// CARDS STYLES
+@mixin cards-heading-style {
   color: #1f1f1f;
   font-weight: 500;
   font-size: 1.875em; //(30px)
   text-align: center;
   margin-bottom: 1.166em; //(35px)
 }
+
+@mixin cards-p-style {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 5em;
+}
+

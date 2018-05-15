@@ -3,7 +3,7 @@
 .about {
   position: relative;
    h2 {
-    @include headings-style;
+    @include cards-heading-style;
 
     //IMAGE
     &:before {
@@ -17,9 +17,7 @@
   }
   //PARAGRAPH
   p {
-    text-align: center;
-    padding: 0 15px; //15px
-    margin-bottom: 5em; //80px
+    @include cards-p-style;
   }
   //NAME LABEL
   .name-label {
@@ -49,9 +47,18 @@
 // PRODUSE SECTION CARD
 
 #produse {
-  padding: 0 15px;
 
   h2 {
-    @include headings-style;
+    @include cards-heading-style;
+  }
+
+  p {
+    @include cards-p-style;
+  }
+
+  ///////////////////
+  // IMAGES
+  img {
+    margin-bottom: 40px;
   }
 }
