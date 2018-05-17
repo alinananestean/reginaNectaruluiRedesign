@@ -1,5 +1,6 @@
 header {
-  @include lighter-text-color;
+
+  @include link-txt-color;
   text-align: center;
   height: 640px;
 
@@ -21,12 +22,17 @@ header {
     position: relative;
     width: 210px;
     margin: 0 auto;
+    ////*** MEDIA QUERIES
+    @media (min-width: 640px) {
+      margin-bottom: 10px;
+    }
+
     a {
-      @include lighter-text-color;
+      @include link-txt-color;
     }
     h1 {
+      font-family: $font_primary;
       text-transform: uppercase;
-      font-family: 'Marcellus', serif;
       font-size: 2em; //(32px)
       margin: 0;
       }
@@ -50,16 +56,27 @@ header {
 
     ul {
       margin: 0;
+
       li {
         list-style: none;
         padding-bottom: 10px;
+        ////*** MEDIA QUERIES
+        @media (min-width: 640px){
+          display: inline-block;
+        }
 
         a {
-          @include lighter-text-color;
-          font-family: 'Montserrat', sans-serif;
+          @include link-txt-color;
+          font-family: $font-secondary;
           text-transform: uppercase;
-          font-size: 1.1em; //16px
+          font-size: 1.2em;
           padding: 10px;
+          @media (min-width: 640px) {
+            margin-bottom: 10px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
       }
     }
@@ -70,12 +87,19 @@ header {
   // INTRO TEXT LINES
 
   p {
-    font-size: .938em; //(15px)
+    font-size: 1em; //(15px)
     font-weight: 300;
-    margin: 0 0 3em;
-
+    margin-bottom: 3em;
+    @media (min-width: 640px) {
+      margin-bottom: 5em;
+    }
     a {
-      @include lighter-text-color;
+      @include link-txt-color;
+      @media (min-width: 640px) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
   :nth-child(4) {

@@ -1,12 +1,14 @@
-/////////////////////////////////
-// HEADER TEXT & LINKS COLOR
-@mixin lighter-text-color {
+/////////////////////////////////lighter-text-color
+// HEADER/FOOTER LINKS COLOR
+@mixin link-txt-color {
   color: #f8d55d;
-  &:visited,
-  &:hover {
+    &:hover,
+    &:visited {
     color: #f8d55d;
   }
 }
+// MEDIA QUERIES * HEADER/FOOTER LINKS
+
 
 /////////////////////////////////
 // CARDS STYLES
@@ -19,8 +21,8 @@
 }
 
 @mixin cards-p-style {
+  color: #1f1f1f;
   text-align: center;
   padding: 0 15px;
   margin-bottom: 5em;
 }
-
