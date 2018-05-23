@@ -1,5 +1,5 @@
 footer {
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(10, 10, 10, 0.9);
   text-align: center;
   padding: 50px 0 35px;
   color: #f8d55d;
@@ -7,8 +7,12 @@ footer {
   p {
     font-size: 1em; //16px
     margin: 0;
-    &:nth-child(1) {
-      display: none;
+  }
+  .adresa {
+    display: none;
+    @media (min-width: 640px) {
+      display: block;
+      margin-bottom: 50px;
     }
   }
   .contact-tel {
@@ -23,7 +27,7 @@ footer {
     i {
       font-size: 1.6em;
       color: #f8d55d;
-      margin-bottom: 2em;
+      margin-bottom: 40px;
     }
   }
 
