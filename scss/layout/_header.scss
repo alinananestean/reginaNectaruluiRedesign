@@ -138,3 +138,17 @@ header {
     margin: 0;
   }
 }
+
+////////////////////////////////
+// RETETE BACKGOUND IMAGE
+
+#retete-header {
+  background: url('../img/retete-cover.jpg') no-repeat center;
+  background-size: cover;
+  height: 480px;
+  .layer {
+    background-color: rgba(10, 10, 10, 0.8);
+    width: 100%;
+    height: 480px;
+  }
+}

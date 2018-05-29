@@ -1,11 +1,29 @@
-/////////////////////
+//////////////////////////////////////////////////////////////////////////////
 //// ABOUT SECTION CARD
 .about {
   text-align: center;
-  // *** IMG & NAME LABEL
+  ////*** MEDIA QUERIES ***
+  @media (min-width: 1024px) {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+
+    .about_card_img,
+    .about_card_txt {
+      width: 50%;
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  // IMG & NAME LABEL
   .about_card_img {
     position: relative;
     margin-bottom: $img-mb;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      margin: 0;
+    }
   }
   .name-label {
     color: #f8d55d;
@@ -15,6 +33,10 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 104px) {
+      padding-left: 10%;
+    }
   }
   h3 {
     font-family: $font_primary;
@@ -29,37 +51,77 @@
     margin: 0;
   }
 
-  // *** HEADING & PARAGRAPH
+  // *** HEADINGS & PARAGRAPH
   h2 {
     @include cards-heading-style;
-  }
-
-  p {
-    @include cards-p-style;
-  }
-}
-
-///////////////////
-// PRODUSE SECTION CARD
-
-#produse {
-  text-align: center;
-  h2 {
-    @include cards-heading-style;
-  }
-
-  p {
-    @include cards-p-style;
-    @media (min-width: 640px) {
-      text-align: left;
-      max-width: 860px;
-      margin: 0 auto 60px;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      @include cards-heading-style-lg;
     }
   }
 
-  ///////////////////
-  // IMAGES
-  img {
-    margin-bottom: $img-mb;
+  p {
+    @include cards-p-style;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      @include cards-p-style-lg;
+    }
   }
 }
+
+  /////////////////////////////////////////////////////////////////////
+  // PRODUSE SECTION CARD
+  #produse {
+    text-align: center;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      max-width: 1200px;
+      margin: auto;
+    }
+      .produse-cards {
+       ////*** MEDIA QUERIES ***
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .produse-img,
+        .produse-txt {
+          width: 50%;
+          margin: 0;
+          text-align: left;
+        }
+      }
+    }
+    h2 {
+      @include cards-heading-style;
+      ////*** MEDIA QUERIES ***
+      @media (min-width: 1024px) {
+        @include cards-heading-style-lg;
+      }
+    }
+    p {
+      @include cards-p-style;
+      ////*** MEDIA QUERIES ***
+      @media (min-width: 640px) {
+        text-align: left;
+        max-width: 860px;
+        margin: 0 auto 60px;
+      }
+      @media (min-width: 1024px) {
+        @include cards-p-style-lg;
+      }
+    }
+
+    ///////////////////
+    // IMAGES
+    img {
+      margin-bottom: $img-mb;
+      ////*** MEDIA QUERIES ***
+      @media (min-width: 1024px) {
+        margin: 0;
+        object-fit: cover;
+        max-height: 425px;
+        height: 100%;
+      }
+    }
+  }

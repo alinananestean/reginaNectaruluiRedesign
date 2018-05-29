@@ -1,0 +1,53 @@
+#retete {
+  // *** CARDS
+  text-align: center;
+  ////*** MEDIA QUERIES ***
+  @media (min-width: 1024px) {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .retete-cards {
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      display: flex;
+      .retete-img,
+      .retete-txt {
+        width: 50%;
+        margin: 0;
+        text-align: left;
+      }
+      &--even {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  // *** HEADINGS & PARAGRAPH
+  h2 {
+    @include cards-heading-style;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      @include cards-heading-style-lg;
+    }
+  }
+
+  p {
+    @include cards-p-style;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      @include cards-p-style-lg;
+    }
+  }
+  ///////////////////
+  // *** IMAGES
+  img {
+    margin-bottom: $img-mb;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      margin: 0;
+      object-fit: cover;
+      max-height: 425px;
+      height: 100%;
+    }
+  }
+}

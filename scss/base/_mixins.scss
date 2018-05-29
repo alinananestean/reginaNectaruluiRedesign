@@ -3,7 +3,8 @@
 @mixin link-txt-color {
   color: #f8d55d;
     &:hover,
-    &:visited {
+    &:visited,
+    &:focus {
     color: #f8d55d;
   }
 }
@@ -17,10 +18,21 @@
   text-align: center;
   margin-bottom: 35px;
 }
-
 @mixin cards-p-style {
   color: #1f1f1f;
   text-align: center;
   padding: 0 30px;
   margin-bottom: 60px;
+}
+// *** MEDIA QUERIES VIEWPORT
+@mixin cards-heading-style-lg {
+  margin-top: 30px;
+  margin-left: 35px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+@mixin cards-p-style-lg {
+  text-align: left;
+  padding-left: 35px;
+  margin: 0;
 }

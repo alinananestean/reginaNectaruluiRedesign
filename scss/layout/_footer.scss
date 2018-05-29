@@ -1,4 +1,14 @@
 footer {
+  //*** MEDIA QUERIES ***
+  @media (min-width: 1024px) {
+    .footer-wrapper {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1200px;
+      margin: auto;
+    }
+  }
+
   background-color: rgba(10, 10, 10, 0.9);
   text-align: center;
   padding: 50px 0 35px;
@@ -10,9 +20,13 @@ footer {
   }
   .adresa {
     display: none;
+    //*** MEDIA QUERIES ***
     @media (min-width: 640px) {
       display: block;
       margin-bottom: 50px;
+    }
+    @media (min-width: 1024px) {
+      margin: 0;
     }
   }
   .contact-tel {
