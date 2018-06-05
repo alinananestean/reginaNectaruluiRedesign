@@ -1,5 +1,6 @@
-//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////
 //// ABOUT SECTION CARD
+///////////////////////////////////////
 .about {
   text-align: center;
   ////*** MEDIA QUERIES ***
@@ -69,21 +70,21 @@
   }
 }
 
-  /////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////
   // PRODUSE SECTION CARD
+ ///////////////////////////////////////
   #produse {
     text-align: center;
     ////*** MEDIA QUERIES ***
     @media (min-width: 1024px) {
       max-width: 1200px;
-      margin: auto;
+      margin: 0 auto 100px;
     }
       .produse-cards {
        ////*** MEDIA QUERIES ***
       @media (min-width: 1024px) {
         display: flex;
         flex-direction: row-reverse;
-
         .produse-img,
         .produse-txt {
           width: 50%;
@@ -92,6 +93,7 @@
         }
       }
     }
+
     h2 {
       @include cards-heading-style;
       ////*** MEDIA QUERIES ***
@@ -103,9 +105,7 @@
       @include cards-p-style;
       ////*** MEDIA QUERIES ***
       @media (min-width: 640px) {
-        text-align: left;
-        max-width: 860px;
-        margin: 0 auto 60px;
+        @include cards-p-style-md;
       }
       @media (min-width: 1024px) {
         @include cards-p-style-lg;
@@ -120,8 +120,17 @@
       @media (min-width: 1024px) {
         margin: 0;
         object-fit: cover;
-        max-height: 425px;
+        max-height: 553px;
         height: 100%;
       }
     }
   }
+
+///////////////////
+// BUTTONS
+.button {
+  @include btn-small;
+  @media (min-width: 1024px) {
+    @include btn-large;
+  }
+}

@@ -26,9 +26,9 @@
                 <!-- NAVIGATION -->
                 <nav>
                     <ul>
-                        <li><a href="index.html">Acasă</a></li>
+                        <li><a class="active" href="index.html">Acasă</a></li>
                         <li><a href="retete.html">Rețete</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav><!-- /NAVIGATION -->
             </div>
@@ -54,7 +54,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
                 ut aliquip ex ea commodo consequat.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
         </div>
     </section>
 
@@ -66,9 +66,58 @@
             </div>
             <div class="produse-txt">
                 <h2>Miere</h2>
-                <p>Lorem ipsum dolor situnt ut labore et doercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Has ut eius sanctus, sed ei sonet utamur eripuit. Cum at accusam praesent, cum ei partiendo intellegebat. Eripuit erroribus prodesset cum eu. </p>
+                <p>Mierea este un aliment cu gust dulce și parfumat, cu aspect semifluid, vâscos sau cristalizat și culoare specifică, având un conținut mare de zaharuri și substanțe minerale, vitamine, enzime, acizi organici.  În raport cu substanțele colorate care se găsesc în nectar culoarea mierii diferă de la incolor până la neagră.</p>
+                <button class="clear button" data-open="miere">Citește mai multe informații</button>
+
+                <!-- OPEN MODAL: MIERE -->
+                <div class="small reveal" id="miere"  data-reveal>
+                    <h2>Despre Miere</h2>
+                    <p>Mierea este un aliment cu gust dulce și parfumat, cu aspect semifluid, vâscos sau cristalizat și culoare specifică, având un conținut mare de zaharuri și substanțe minerale, vitamine, enzime, acizi organici.  În raport cu substanțele colorate care se găsesc în nectar culoarea mierii diferă de la incolor până la neagră. Mierea are următoarele efecte:</p>
+                    <h4>Antibacterian</h4>
+                    <p>Mierea conţine mici cantităţi de apă, grăsimi şi proteine, are un pH relativ mic, o osmolaritate ridicată ce înseamnă "condiţii vitrege de viaţă"pentru bacterii. Bioflavonoidele aflate în miere au efect antibacterian direct. Multe dintre enzimele mierii acţionează în final tot antibacterian.</p>
+
+                    <h4>Antibiotic</h4>
+                    <p>Spectrul proprietăţilor anti-microbiene al mierii este destul de larg Agent anti-oxidant în alimentaţie. Mierea are capacităţi anti-oxidative; oxidare scăzută în alimente înseamnă o nutriţie mai bună; o nutriţie mai bună înseamnă o sănătate mai bună.</p>
+
+                    <h4>Anti-carii</h4>
+                    <p>Mierea este, în general, o substanţă antibacteriană nespecifică. Mierea hrăneşte gingiile, ajutând la o mai bună hrănire a dinţilor.</p>
+
+                    <h4>Antiinflamator</h4>
+                    <p>Mierea este un bun antioxidant. Conţine bioflavonoide cu proprietăţi antiinflamatorii. Mierea poate absorbi mult "foc" din aria inflamată, conform Medicinii Tradiţionale Chineze.</p>
+
+                    <h4>Bio-stimulator</h4>
+                    <p>Mierea este un "aliment viu" cu multă bio-energie; furnizează cea mai bună energie pentru celule vii datorită acizilor săi organici.</p>
+
+                    <h4>Depurativ</h4>
+                    <p>Ajută mecanismele de detoxifiere ale organismului; mierea conţine multă fructoză (în special mierea de salcâm) care ajută în mod direct mecanismele energetice ale ficatului; un ficat sănătos înseamnă o mai bună detoxifiere biochimică.</p>
+
+                    <h4>Emolient</h4>
+                    <p>Datorită proprietăţilor antiinflamatorii şi a capacităţii sale de atragere a apei.</p>
+
+                    <h4>Energetic</h4>
+                    <p>Carbohidraţii din miere ard uşor şi cel mai adesea (când este prezent suficient oxigen) până la apă şi CO2, astfel că nu rămân reziduuri care să reducă calitatea energiei. Fructoza conţinută în miere creşte nivelul energiei în principala noastră "baterie" (ficatul).</p>
+
+                    <h4>Imunostimulant</h4>
+                    <p>În primul rând furnizează multă energie "uşoară" celulelor albe din sânge iar bioflavonoidele acţionează direct ca imunostimulente.</p>
+
+                    <h4>Laxativ</h4>
+                    <p>Mierea este higroscopică (atrage apa).  Reglează flora intestinului gros.Ajută pancreasul şi ficatul să funcţioneze mai bine; aceste organe vor produce atunci mai multe sucuri digestive.</p>
+
+                    <h4>Regenerativ pentru ţesutul conjunctiv</h4>
+                    <p>Mierea ajută la producerea mucopolizaharidelor care sunt componente importante ale ţesutului conjunctiv.</p>
+
+                    <h4>Stimulează anabolismul</h4>
+                    <p>Mierea este în principal un factor "yin" conform Medicinii Tradiţionale Chineze şi Medicinii Indiene; calmează sistemul nervos, acesta ajută la regenerarea şi/sau crearea unor ţesuturi normale, noi.</p>
+
+                    <h4>Tonicardiac</h4>
+                    <p>Mierea este cea mai bună energie pentru orice muşchi, inclusiv pentru inimă, care este în primul rând "pompă musculară".</p>
+                    <button class="close-button" data-close aria-label="Close Accessible Modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div><!-- / END MODAL: MIERE -->
+
                 <h2>Polen</h2>
-                <p>Lorem ipsum dolor situnt ut labore et doercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Has ut eius sanctus, sed ei sonet utamur eripuit. Cum at accusam praesent, cum ei partiendo intellegebat. Eripuit erroribus prodesset cum eu. </p>
+                <p>Polenul și mierea sunt singurele resurse alimentare care s-au descoperit că conțin 22 de nutrienți. Din această cauză polenul este considerat ca „aliment complet”. Polenul mai conține minerale importante, ca fierul și magneziul, numeroase microelemente, multa lecitină și în special acizi nucleici. Polenul poate provoca alergii.  <a href="#">Citește mai multe</a> informații despre polen.</p>
             </div>
         </div>
 
@@ -78,9 +127,9 @@
             </div>
             <div class="produse-txt">
                 <h2>Propolis</h2>
-                <p>Lorem ipsum dolor situnt ut labore et doercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Has ut eius sanctus, sed ei sonet utamur eripuit. Cum at accusam praesent, cum ei partiendo intellegebat. Eripuit erroribus prodesset cum eu. </p>
+                <p>Propolisul este folosit ca produs apicol terapeutic în medicina populară pentru tratarea diferitelor afecțiuni. Conține un complex de antibiotice vegetale și elemente chimice de care organismul uman are nevoie. Propolisul se prezintă ca o masă lipicioasă de culoare variabilă între verde, maro și negru, având miros aromat de rășini și balsamuri. <a href="#">Citește mai multe</a> informații despre propolis.</p>
                 <h2>Lăptișor de matcă</h2>
-                <p>Lorem ipsum dolor situnt ut labore et doercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Has ut eius sanctus, sed ei sonet utamur eripuit. Cum at accusam praesent, cum ei partiendo intellegebat. Eripuit erroribus prodesset cum eu. </p>
+                <p>Lăptișorul de matcă este o secreție produsă de albine care este utilizată pentru a hrăni reginele. Acesta este nu numai un excelent aliment pentru albine, dar şi un foarte puternic produs antiviral şi antibacterian. La oameni, lăptişorul are efecte legate în special de sistemele sexuale, genitale şi endocrine. <a href="#">Citește mai multe</a> informații despre lăptișorul de matcă.</p>
             </div>
         </div>
 
@@ -90,9 +139,9 @@
             </div>
             <div class="produse-txt">
                 <h2>Ceară</h2>
-                <p>Lorem ipsum dolor situnt ut labore et doercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Has ut eius sanctus, sed ei sonet utamur eripuit. Cum at accusam praesent, cum ei partiendo intellegebat. Eripuit erroribus prodesset cum eu. </p>
+                <p>O substanţă de culoare gălbuie, cu miros plăcut, caracteristic, produsă de albine, care se recoltează prin topirea fagurilor. Utilizările cerii de albine sunt prea multe pentru a le enumera, dar acestea includ fabricarea de lumânări, creioane, lustruirea mobilei, este însă un ingredient folosit și în multe produse și tratamente cosmetice. <a href="#">Citește mai multe</a> informații despre ceară.</p>
                 <h2>Veninul</h2>
-                <p>Lorem ipsum dolor situnt ut labore et doercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Has ut eius sanctus, sed ei sonet utamur eripuit. Cum at accusam praesent, cum ei partiendo intellegebat. Eripuit erroribus prodesset cum eu. </p>
+                <p>Veninul este foarte benefic, acupunctura, dar şi produsele pe bază de venin ne întăresc sistemul imunitar, ne scapă de durerile articulare, dar şi de anemie. Veninul de albine este un produs biologic propriu al albinei și nu intră în rândul principiilor active transmise de plante.  <a href="#">Citește mai multe</a> informații despre venin.</p>
             </div>
         </div>
     </section><!-- /CARDS -->

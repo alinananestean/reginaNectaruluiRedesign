@@ -1,0 +1,41 @@
+#contact {
+  margin-bottom: 100px;
+  @media (min-width: 1024px) {
+    display: flex;
+
+    .contact-info,
+    .contact-form {
+      width: 50%;
+    }
+  }
+  //*** HEADINGS & PARAGRAPH
+  h2 {
+    margin-top: 60px;
+    @include cards-heading-style;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      @include cards-heading-style-lg;
+    }
+  }
+
+  p {
+    @include cards-p-style;
+    ////*** MEDIA QUERIES ***
+    @media (min-width: 1024px) {
+      @include cards-p-style-lg;
+    }
+  }
+
+  //*** FORM
+  form {
+    font-family: 'Montserrat', sans-serif;
+        .button {
+      background-color: #221300;
+      color: #f8d55d;
+      &:hover,
+      &:focus {
+        box-shadow: inset 1px 2px 8px rgba(236, 201, 93, 0.75);
+      }
+    }
+  }
+}

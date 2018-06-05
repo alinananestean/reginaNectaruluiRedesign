@@ -9,6 +9,18 @@
   }
 }
 
+/////////////////////////////////lighter-text-color
+// HEADER IMGAGE / RETETE & CONTACT STYLING
+@mixin header-img {
+  background-size: cover;
+  height: 480px;
+}
+@mixin header-img-layer {
+  background-color: rgba(10, 10, 10, 0.8);
+  width: 100%;
+  height: 480px;
+}
+
 /////////////////////////////////
 // CARDS STYLES
 @mixin cards-heading-style {
@@ -22,9 +34,15 @@
   color: #1f1f1f;
   text-align: center;
   padding: 0 30px;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
-// *** MEDIA QUERIES VIEWPORT
+
+@mixin cards-p-style-md {
+  text-align: left;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
 @mixin cards-heading-style-lg {
   margin-top: 30px;
   margin-left: 35px;
@@ -35,4 +53,15 @@
   text-align: left;
   padding-left: 35px;
   margin: 0;
+}
+
+// *** BUTTONS
+@mixin btn-small {
+  margin: 0 0 60px;
+  padding: 10px 15px;
+}
+
+@mixin btn-large {
+  margin: 0 0 0 18px ;
+  padding: 5px 15px 10px;
 }
